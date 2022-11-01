@@ -1,0 +1,47 @@
+@use "fx-layout" as fxLayout;
+
+// fxLayoutAlign
+$layout-aligns: (
+  start: flex-start,
+  flex-start: flex-start,
+  center: center,
+  end: flex-end,
+  flex-end: flex-end,
+  space-around: space-around,
+  space-between: space-between,
+  space-evenly: space-evenly,
+);
+
+$prefix: fxLayoutAlign;
+
+@each $align, $value in $layout-aligns {
+  .#{$prefix}-#{$align} {
+    justify-content: $value;
+  }
+  .#{$prefix}-cross-#{$align} {
+    align-items: $value;
+    align-content: $value;
+  }
+}
+
+// extra one-offs
+
+.#{$prefix}-cross-stretch {
+  &.#{fxLayout.$prefix}-column,
+  &.#{fxLayout.$prefix}-column-reverse,
+  &.#{fxLayout.$prefix}-column-wrap,
+  &.#{fxLayout.$prefix}-column-reverse-wrap {
+    max-width: 100%;
+  }
+  &.#{fxLayout.$prefix}-row,
+  &.#{fxLayout.$prefix}-row-reverse,
+  &.#{fxLayout.$prefix}-row-wrap,
+  &.#{fxLayout.$prefix}-row-reverse-wrap {
+    max-height: 100%;
+  }
+}
+
+.#{$prefix}-cross-baseline {
+  align-items: baseline;
+  align-content: stretch;
+}

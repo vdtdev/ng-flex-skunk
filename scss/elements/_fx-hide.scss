@@ -1,0 +1,23 @@
+@use '../config/breakpoints' as breakpoints;
+
+@each $n, $size in breakpoints.$sizes {
+  $min: nth($size, 1);
+  $max: nth($size, 2);
+  @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+    .fxHide-#{$n} {
+      display: none;
+    }
+  }
+  @media screen and (min-width: #{$max + 1px}) {
+    .fxHide-gt-#{$n} {
+      display: none;
+    }
+  }
+  @if ($min - 1px) > 0px {
+    @media screen and (max-width: #{$min - 1px}) {
+      .fxHide-lt-#{$n} {
+        display: none;
+      }
+    }
+  }
+}

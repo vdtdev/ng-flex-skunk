@@ -1,0 +1,22 @@
+@use "./fx-layout" as fxLayout;
+
+// fxLayoutGap
+
+$prefix: fxLayoutGap;
+
+/** Combine with gap size assigned to --fx-layout-gap */
+.#{$prefix} {
+  // In column layout
+  &.#{fxLayout.$prefix}-column,
+  &.#{fxLayout.$prefix}-column-reverse {
+    margin-right: var(--fx-layout-gap);
+  }
+
+  // In row layout
+  &.#{fxLayout.$prefix}-row,
+  &.#{fxLayout.$prefix}-row-reverse {
+    margin-bottom: var(--fx-layout-gap);
+  }
+}
+
+// TODO: Account for grid mode and wrap modes (see https://github.com/angular/flex-layout/wiki/fxLayoutGap-API#grid-mode)

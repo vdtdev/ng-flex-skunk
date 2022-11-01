@@ -1,0 +1,29 @@
+@use "sass:list";
+
+// fxLayout
+// fxLayout-[inline]-direction-[wrap]
+
+$row-layouts: (row, row-reverse);
+$column-layouts: (column, column-reverse);
+$layouts: list.join($row-layouts, $column-layouts);
+
+$prefix: fxLayout;
+
+@each $layout in $layouts {
+  .#{$prefix}-#{$layout} {
+    display: flex;
+    flex-direction: $layout;
+  }
+  .#{$prefix}-inline-#{$layout} {
+    display: inline-flex;
+    flex-direction: $layout;
+  }
+  .#{$prefix}-#{$layout}-wrap {
+    display: flex;
+    flex-flow: $layout wrap;
+  }
+  .#{$prefix}-inline-#{$layout}-wrap {
+    display: inline-flex;
+    flex-flow: $layout wrap;
+  }
+}

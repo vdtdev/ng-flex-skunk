@@ -1,0 +1,18 @@
+{
+  "name": "ng-flex-skunk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./dist",
+    "sass": "node build.js",
+    "build": "npm run clean && npm run sass"
+  },
+  "author": "wade@bitovi.com",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "sass": "^1.55.0"
+  }
+}
