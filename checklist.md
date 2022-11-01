@@ -2,10 +2,12 @@
 
 ## API for DOM Containers
 
+_Key: `[optional]`,`<required param>`_
+
 | Directive  | CSS Class   | Notes |
 |------------|-------------|-------|
-| `fxLayout` | `.fxLayout` |  `fxLayout-[inline]-direction-[wrap]`     |
-| `fxLayoutAlign` | `.fxLayoutAlign`, `.fxLayoutAlign-cross` | |
+| `fxLayout` | `.fxLayout` |  `fxLayout-[inline]-<direction>-[wrap]`     |
+| `fxLayoutAlign` | `.fxLayoutAlign`, `.fxLayoutAlign-cross` |  `.fxLayoutAlign-[cross]-<alignment>`|
 | `fxLayoutGap` | `.fxLayoutGap` | Uses `--fx-layout-gap` |
 | `gdAlignColumns` | ? | Not documented |
 | `gdAlignRows` | ? | Not documented |
@@ -20,9 +22,9 @@
 | Directive  | CSS Class   | Notes |
 |------------|-------------|-------|
 | `fxFlex` | - | |
-| `.fxFlexOrder` | - | |
-| `.fxFlexOffset` | - | |
-| `.fxFlexAlign` | - | |
+| `fxFlexOrder` | - | |
+| `fxFlexOffset` | - | |
+| `fxFlexAlign` | - | |
 | `fxFlexill` | - | |
 | `fxFill` | - | |
 | `gdArea` | - | |
