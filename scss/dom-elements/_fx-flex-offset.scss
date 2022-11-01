@@ -1,0 +1,22 @@
+@use '../dom-containers/fx-layout' as fxLayout;
+
+// fxFlexOffset
+
+$prefix: fxFlexOffset;
+
+/** Control offset with --fx-flex-offset */
+.#{$prefix} {
+    &.#{fxLayout.$prefix}-column {
+        margin-left: var(--fx-flex-offset);
+    }
+    &.#{fxLayout.$prefix}-column-reverse {
+        margin-right: var(--fx-flex-offset);
+    }
+    &.#{fxLayout.$prefix}-row {
+        margin-top: var(--fx-flex-offset);
+    }
+    &.#{fxLayout.$prefix}-row-reverse {
+        margin-bottom: var(--fx-flex-offset);
+    }
+}
+

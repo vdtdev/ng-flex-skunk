@@ -1,7 +1,4 @@
+/* Applies flex value from --fx-flex */
 .fxFlex {
-    display: flex;
-}
-
-.fxFlex-inline {
-    display: inline-flex;
+    flex: var(--fx-flex);
 }

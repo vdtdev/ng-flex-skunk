@@ -1,0 +1,5 @@
+$prefix: fxFlexOrder;
+
+.#{$prefix} {
+    order: var(--fx-flex-order, 0);
+}

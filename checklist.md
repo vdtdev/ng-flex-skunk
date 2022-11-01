@@ -21,9 +21,9 @@ _Key: `[optional]`,`<required param>`_
 
 | Directive  | CSS Class   | Notes |
 |------------|-------------|-------|
-| `fxFlex` | - | |
-| `fxFlexOrder` | - | |
-| `fxFlexOffset` | - | |
+| `fxFlex` | `.fxFlex` | Set value with `--fx-flex` |
+| `fxFlexOrder` | `.fxFlexOrder` | Set order with `--fx-flex-order` |
+| `fxFlexOffset` | `.fxFlexOffset` | `.fxFlexOffset-[direction]`; Set offset with `--fx-flex-offset` |
 | `fxFlexAlign` | - | |
 | `fxFlexill` | - | |
 | `fxFill` | - | |
