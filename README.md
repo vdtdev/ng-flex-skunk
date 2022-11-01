@@ -2,6 +2,7 @@
 
 Skunkworks for a CSS-utility class based replacement for Angular Flex
 
+See [Checklist](checklist.md)
 
 ## Build
 
