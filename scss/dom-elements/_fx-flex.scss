@@ -1,4 +1,4 @@
 /* Applies flex value from --fx-flex */
 .fxFlex {
-    flex: var(--fx-flex);
+    flex: var(--fx-flex, auto);
 }

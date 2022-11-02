@@ -18,66 +18,66 @@
   <body>
     <h1>ng-flex-skunk demo</h1>
     <hr />
+    <p>Note: Percentages need to be used with flex values to match angular-flex behavior</p>
     <h2>fxLayout-row</h2>
     <div class="holder-block fxLayout-row" style="height: 200px">
       <div class="color-block fxFlex" style="--fx-flex: 20%">
         --fx-flex: 20%
       </div>
-      <div class="color-block fxFlex" style="--fx-flex: 60">--fx-flex: 60</div>
-      <div class="color-block fxFlex" style="">--fx-flex: not set</div>
+      <div class="color-block fxFlex" style="--fx-flex: 60%">--fx-flex: 60%</div>
+      <div class="color-block fxFlex" style="">--fx-flex: auto</div>
     </div>
     <br />
     <div class="holder-block fxLayout-row" style="height: 200px">
       <div
         class="color-block fxFlex fxFlexOffset"
-        style="--fx-flex: 60; --fx-flex-offset: 20%"
+        style="--fx-flex: 60%; --fx-flex-offset: 20%"
       >
-        --fx-flex: 60<br />--fx-flex-offset: 20%
+        --fx-flex: 60%<br />--fx-flex-offset: 20%
       </div>
-      <div class="color-block fxFlex" style="">--fx-flex: not set</div>
+      <div class="color-block fxFlex" style="">--fx-flex: auto</div>
     </div>
     <br />
     <div class="holder-block fxLayout-row" style="height: 200px">
-      <div class="color-block fxFlex fxFlexAlign-start" style="--fx-flex: 20">
-        --fx-flex: 20<br />
+      <div class="color-block fxFlex fxFlexAlign-start" style="--fx-flex: 20%">
+        --fx-flex: 20%<br />
         fxFlexAlign-start
       </div>
-      <div class="color-block fxFlex fxFlexAlign-center" style="--fx-flex: 30">
-        --fx-flex: 30<br />
+      <div class="color-block fxFlex fxFlexAlign-center" style="--fx-flex: 30%">
+        --fx-flex: 30%<br />
         fxFlexAlign-center
       </div>
-      <div class="color-block fxFlex fxFlexAlign-end" style="--fx-flex: 30">
-        --fx-flex: 30<br />
+      <div class="color-block fxFlex fxFlexAlign-end" style="--fx-flex: 30%">
+        --fx-flex: 30%<br />
         fxFlexAlign-end
       </div>
-      <div class="color-block fxFlex fxFlexAlign-stretch" style="--fx-flex: 1">
-        --fx-flex: 1<br />
+      <div class="color-block fxFlex fxFlexAlign-stretch">
         fxFlexAlign-stretch
       </div>
     </div>
     <br />
     <h2>fxLayout-column</h2>
     <div class="holder-block fxLayout-column" style="height: 200px">
-      <div class="color-block fxFlex" style="--fx-flex: 20">--fx-flex: 20</div>
-      <div class="color-block fxFlex" style="--fx-flex: 60">--fx-flex: 60</div>
-      <div class="color-block fxFlex" style="">--fx-flex: not set</div>
+      <div class="color-block fxFlex" style="--fx-flex: 20%">--fx-flex: 20%</div>
+      <div class="color-block fxFlex" style="--fx-flex: 60%">--fx-flex: 60%</div>
+      <div class="color-block fxFlex" style="">--fx-flex: auto</div>
     </div>
     <br />
     <div class="holder-block fxLayout-column" style="height: 200px">
-      <div class="color-block fxFlex fxFlexAlign-start" style="--fx-flex: 20">
-        --fx-flex: 20<br />
+      <div class="color-block fxFlex fxFlexAlign-start" style="--fx-flex: 20%">
+        --fx-flex: 20%<br />
         fxFlexAlign-start
       </div>
-      <div class="color-block fxFlex fxFlexAlign-center" style="--fx-flex: 30">
-        --fx-flex: 30<br />
+      <div class="color-block fxFlex fxFlexAlign-center" style="--fx-flex: 30%">
+        --fx-flex: 30%<br />
         fxFlexAlign-center
       </div>
-      <div class="color-block fxFlex fxFlexAlign-end" style="--fx-flex: 30">
-        --fx-flex: 30<br />
+      <div class="color-block fxFlex fxFlexAlign-end" style="--fx-flex: 30%">
+        --fx-flex: 30%<br />
         fxFlexAlign-end
       </div>
-      <div class="color-block fxFlex fxFlexAlign-stretch" style="--fx-flex: 1">
-        --fx-flex: 1; fxFlexAlign-stretch
+      <div class="color-block fxFlex fxFlexAlign-stretch">
+        fxFlexAlign-stretch
       </div>
     </div>
     <br />
