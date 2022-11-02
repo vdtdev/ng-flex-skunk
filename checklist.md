@@ -36,7 +36,7 @@ _Key: `[optional]`,`<required param>`_
 
 | Directive | CSS Class | Notes |
 |-----------|-----------|-------|
-| `fxHide` | `.fxHide` | `.fxHide-[lt | gt]-size` |
+| `fxHide` | `.fxHide` | `.fxHide-[lt/gt]-size` |
 | `fxShow` | - | Would require knowing original display type |
 | `ngClass` | - | TODO: Size-based conditional similar to fxHide |
 | `ngStyle` | - | TODO as angular directive |
