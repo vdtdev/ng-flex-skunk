@@ -8,4 +8,8 @@ See [Checklist](checklist.md)
 
 `npm run build`
 
+## Demo Page
+
+`npm run serve`
+
 MIT License
