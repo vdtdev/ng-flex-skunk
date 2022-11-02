@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="dist/lib.css" type="text/css">
-        <style>
-            .color-block {
-                padding: 8px;
-                background-color: blue;
-                color: white;
-                box-sizing: border-box;
-                border: 1px solid navy;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>ng-flex-skunk demo</h1>
-        <hr>
-        <h2>fxLayout-row</h2>
-        <div class="fxLayout-row" style="height: 200px">
-            <div class="color-block fxFlex" style="--fx-flex: 20">--fx-flex: 20</div>
-            <div class="color-block fxFlex" style="--fx-flex: 60">--fx-flex: 60</div>
-            <div class="color-block fxFlex" style="">--fx-flex: not set</div>
-        </div>
-        <br>
-        <h2>fxLayout-column</h2>
-        <div class="fxLayout-column" style="height: 200px">
-            <div class="color-block fxFlex" style="--fx-flex: 20">--fx-flex: 20</div>
-            <div class="color-block fxFlex" style="--fx-flex: 60">--fx-flex: 60</div>
-            <div class="color-block fxFlex" style="">--fx-flex: not set</div>
-        </div>
-    </body>
+  <head>
+    <link rel="stylesheet" href="dist/lib.css" type="text/css" />
+    <style>
+      .holder-block {
+        border: 1px solid red;
+      }
+      .color-block {
+        padding: 8px;
+        background-color: blue;
+        color: white;
+        box-sizing: border-box;
+        border: 1px solid navy;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ng-flex-skunk demo</h1>
+    <hr />
+    <h2>fxLayout-row</h2>
+    <div class="holder-block fxLayout-row" style="height: 200px">
+      <div class="color-block fxFlex" style="--fx-flex: 20">--fx-flex: 20</div>
+      <div class="color-block fxFlex" style="--fx-flex: 60">--fx-flex: 60</div>
+      <div class="color-block fxFlex" style="">--fx-flex: not set</div>
+    </div>
+    <br />
+    <div class="holder-block fxLayout-row" style="height: 200px">
+      <div
+        class="color-block fxFlex fxFlexOffset"
+        style="--fx-flex: 60; --fx-flex-offset: 20%"
+      >
+        --fx-flex: 60<br />--fx-flex-offset: 20%
+      </div>
+      <div class="color-block fxFlex" style="">--fx-flex: not set</div>
+    </div>
+    <br />
+    <div class="holder-block fxLayout-row" style="height: 200px">
+      <div class="color-block fxFlex fxFlexAlign-start" style="--fx-flex: 20">
+        --fx-flex: 20<br />
+        fxFlexAlign-start
+      </div>
+      <div class="color-block fxFlex fxFlexAlign-end" style="--fx-flex: 60">
+        --fx-flex: 60<br />
+        fxFlexAlign-end
+      </div>
+      <div class="color-block fxFlex fxFlexAlign-stretch" style="--fx-flex: 1">
+        --fx-flex: 1<br />
+        fxFlexAlign-stretch
+      </div>
+    </div>
+    <br />
+    <h2>fxLayout-column</h2>
+    <div class="holder-block fxLayout-column" style="height: 200px">
+      <div class="color-block fxFlex" style="--fx-flex: 20">--fx-flex: 20</div>
+      <div class="color-block fxFlex" style="--fx-flex: 60">--fx-flex: 60</div>
+      <div class="color-block fxFlex" style="">--fx-flex: not set</div>
+    </div>
+    <br />
+    <div class="holder-block fxLayout-column" style="height: 200px">
+      <div class="color-block fxFlex fxFlexAlign-start" style="--fx-flex: 20">
+        --fx-flex: 20<br />
+        fxFlexAlign-start
+      </div>
+      <div class="color-block fxFlex fxFlexAlign-end" style="--fx-flex: 60">
+        --fx-flex: 60<br />
+        fxFlexAlign-end
+      </div>
+      <div class="color-block fxFlex fxFlexAlign-stretch" style="--fx-flex: 1">
+        --fx-flex: 1; fxFlexAlign-stretch
+      </div>
+    </div>
+    <br />
+  </body>
 </html>

@@ -23,8 +23,8 @@ _Key: `[optional]`,`<required param>`_
 |------------|-------------|-------|
 | `fxFlex` | `.fxFlex` | Set value with `--fx-flex` |
 | `fxFlexOrder` | `.fxFlexOrder` | Set order with `--fx-flex-order` |
-| `fxFlexOffset` | `.fxFlexOffset` | `.fxFlexOffset-[direction]`; Set offset with `--fx-flex-offset` |
-| `fxFlexAlign` | - | |
+| `fxFlexOffset` | `.fxFlexOffset` | Set offset with `--fx-flex-offset` |
+| `fxFlexAlign` | `.fxFlexAlign` | `.fxFlexAlign-<alignment>` |
 | `fxFlexill` | - | |
 | `fxFill` | - | |
 | `gdArea` | - | |
