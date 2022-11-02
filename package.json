@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf ./dist",
     "sass": "node build.js",
-    "build": "npm run clean && npm run sass"
+    "build": "npm run clean && npm run sass",
+    "serve": "npm run build && http-server"
   },
   "author": "wade@bitovi.com",
   "license": "MIT",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "rimraf": "^3.0.2",
     "sass": "^1.55.0"
   }
