@@ -1,19 +1,21 @@
+@use "../config/naming" as naming;
 @use "../dom-containers/fx-layout" as fxLayout;
 
 // fxFlexOffset
 
-$prefix: fxFlexOffset;
+$prefix: #{naming.$rootPrefix}FlexOffset;
+$var: #{naming.$rootPrefix}-flex-offset;
 
-/** Control offset with --fx-flex-offset */
+/** Control offset with --#{$var} */
 .#{fxLayout.$prefix}-row > .#{$prefix} {
-  margin-left: var(--fx-flex-offset);
+  margin-left: var(--#{$var});
 }
 .#{fxLayout.$prefix}-row-reverse > .#{$prefix} {
-  margin-right: var(--fx-flex-offset);
+  margin-right: var(--#{$var});
 }
 .#{fxLayout.$prefix}-column > .#{$prefix} {
-  margin-top: var(--fx-flex-offset);
+  margin-top: var(--#{$var});
 }
 .#{fxLayout.$prefix}-column-reverse > .#{$prefix} {
-  margin-bottom: var(--fx-flex-offset);
+  margin-bottom: var(--#{$var});
 }

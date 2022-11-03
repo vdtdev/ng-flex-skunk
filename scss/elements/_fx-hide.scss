@@ -1,21 +1,24 @@
 @use '../config/breakpoints' as breakpoints;
+@use "../config/naming" as naming;
+
+$prefix: #{naming.$rootPrefix}Hide;
 
 @each $n, $size in breakpoints.$sizes {
   $min: nth($size, 1);
   $max: nth($size, 2);
   @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
-    .fxHide-#{$n} {
+    .#{$prefix}-#{$n} {
       display: none;
     }
   }
   @media screen and (min-width: #{$max + 1px}) {
-    .fxHide-gt-#{$n} {
+    .#{$prefix}-gt-#{$n} {
       display: none;
     }
   }
   @if ($min - 1px) > 0px {
     @media screen and (max-width: #{$min - 1px}) {
-      .fxHide-lt-#{$n} {
+      .#{$prefix}-lt-#{$n} {
         display: none;
       }
     }

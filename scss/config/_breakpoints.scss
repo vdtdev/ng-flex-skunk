@@ -1,12 +1,13 @@
 $size-xs: (0px, 599px);
 $size-sm: (600px, 959px);
 $size-md: (960px, 1279px);
-// $size-m: 600px;
-// $size-l: 800px;
-// TODO: Other sizes
+$size-lg: (1280px, 1919px);
+$size-xl: (1920px, 5000px);
 
 $sizes: (
   xs: $size-xs,
   sm: $size-sm,
   md: $size-md,
+  lg: $size-lg,
+  xl: $size-xl,
 );

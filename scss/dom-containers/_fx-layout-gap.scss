@@ -1,21 +1,23 @@
 @use "./fx-layout" as fxLayout;
+@use "../config/naming" as naming;
 
 // fxLayoutGap
 
-$prefix: fxLayoutGap;
+$prefix: #{naming.$rootPrefix}LayoutGap;
+$var: #{naming.$rootPrefix}-layout-gap;
 
-/** Combine with gap size assigned to --fx-layout-gap */
+/** Combine with gap size assigned to --#{$var} */
 .#{$prefix} {
   // In column layout
   &.#{fxLayout.$prefix}-column,
   &.#{fxLayout.$prefix}-column-reverse {
-    margin-right: var(--fx-layout-gap);
+    margin-right: var(--#{$var});
   }
 
   // In row layout
   &.#{fxLayout.$prefix}-row,
   &.#{fxLayout.$prefix}-row-reverse {
-    margin-bottom: var(--fx-layout-gap);
+    margin-bottom: var(--#{$var});
   }
 }
 

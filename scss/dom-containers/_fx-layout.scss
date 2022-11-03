@@ -1,4 +1,5 @@
 @use "sass:list";
+@use "../config/naming" as naming;
 
 // fxLayout
 // fxLayout-[inline]-direction-[wrap]
@@ -7,7 +8,7 @@ $row-layouts: (row, row-reverse);
 $column-layouts: (column, column-reverse);
 $layouts: list.join($row-layouts, $column-layouts);
 
-$prefix: fxLayout;
+$prefix: #{naming.$rootPrefix}Layout;
 
 @each $layout in $layouts {
   .#{$prefix}-#{$layout} {

@@ -6,9 +6,9 @@ _Key: `[optional]`,`<required param>`_
 
 | Directive  | CSS Class   | Notes |
 |------------|-------------|-------|
-| `fxLayout` | `.fxLayout` |  `fxLayout-[inline]-<direction>-[wrap]`     |
-| `fxLayoutAlign` | `.fxLayoutAlign`, `.fxLayoutAlign-cross` |  `.fxLayoutAlign-[cross]-<alignment>`|
-| `fxLayoutGap` | `.fxLayoutGap` | Uses `--fx-layout-gap` |
+| `fxLayout` | `.fsLayout` |  `fsLayout-[inline]-<direction>-[wrap]`     |
+| `fxLayoutAlign` | `.fsLayoutAlign`, `.fsLayoutAlign-cross` |  `.fsLayoutAlign-[cross]-<alignment>`|
+| `fxLayoutGap` | `.fsLayoutGap` | Uses `--fs-layout-gap` |
 | `gdAlignColumns` | ? | Not documented |
 | `gdAlignRows` | ? | Not documented |
 | `gdAreas` | ? | Not documented |
@@ -21,10 +21,10 @@ _Key: `[optional]`,`<required param>`_
 
 | Directive  | CSS Class   | Notes |
 |------------|-------------|-------|
-| `fxFlex` | `.fxFlex` | Set value with `--fx-flex` |
-| `fxFlexOrder` | `.fxFlexOrder` | Set order with `--fx-flex-order` |
-| `fxFlexOffset` | `.fxFlexOffset` | Set offset with `--fx-flex-offset` |
-| `fxFlexAlign` | `.fxFlexAlign` | `.fxFlexAlign-<alignment>` |
+| `fxFlex` | `.fsFlex` | Set value with `--fs-flex` |
+| `fxFlexOrder` | `.fsFlexOrder` | Set order with `--fs-flex-order` |
+| `fxFlexOffset` | `.fsFlexOffset` | Set offset with `--fs-flex-offset` |
+| `fxFlexAlign` | `.fsFlexAlign` | `.fsFlexAlign-<alignment>` |
 | `fxFlexill` | - | |
 | `fxFill` | - | |
 | `gdArea` | - | |
@@ -36,7 +36,7 @@ _Key: `[optional]`,`<required param>`_
 
 | Directive | CSS Class | Notes |
 |-----------|-----------|-------|
-| `fxHide` | `.fxHide` | `.fxHide-[lt/gt]-size` |
+| `fxHide` | `.fsHide` | `.fsHide-[lt/gt]-size` |
 | `fxShow` | - | Would require knowing original display type |
 | `ngClass` | - | TODO: Size-based conditional similar to fxHide |
 | `ngStyle` | - | TODO as angular directive |

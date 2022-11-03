@@ -1,7 +1,9 @@
+@use "../config/naming" as naming;
+
 // fxFlexAlign
 // fxFlexAlign-<alignment>
 
-$prefix: fxFlexAlign;
+$prefix: #{naming.$rootPrefix}FlexAlign;
 
 $aligns: (
     start: flex-start,

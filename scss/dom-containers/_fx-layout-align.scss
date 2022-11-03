@@ -1,4 +1,5 @@
 @use "fx-layout" as fxLayout;
+@use "../config/naming" as naming;
 
 // fxLayoutAlign
 $layout-aligns: (
@@ -12,7 +13,7 @@ $layout-aligns: (
   space-evenly: space-evenly,
 );
 
-$prefix: fxLayoutAlign;
+$prefix: #{naming.$rootPrefix}LayoutAlign;
 
 @each $align, $value in $layout-aligns {
   .#{$prefix}-#{$align} {

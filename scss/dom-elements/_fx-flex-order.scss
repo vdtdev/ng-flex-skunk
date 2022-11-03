@@ -1,5 +1,9 @@
-$prefix: fxFlexOrder;
+@use "../config/naming" as naming;
 
+$prefix: #{naming.$rootPrefix}FlexOrder;
+$var: #{naming.$rootPrefix}-flex-order;
+
+/** Set order with --#{$var} */
 .#{$prefix} {
-    order: var(--fx-flex-order, 0);
+    order: var(--#{$var}, 0);
 }

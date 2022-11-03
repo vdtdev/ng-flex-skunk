@@ -1,4 +1,9 @@
-/* Applies flex value from --fx-flex */
-.fxFlex {
-    flex: var(--fx-flex, auto);
+@use "../config/naming" as naming;
+
+$prefix: #{naming.$rootPrefix}Flex;
+$var: #{naming.$rootPrefix}-flex;
+
+/* Applies flex value from --#{$var} */
+.#{$prefix} {
+    flex: var(--#{$var}, auto);
 }
